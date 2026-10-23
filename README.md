@@ -33,3 +33,26 @@ If the page is hosted anywhere other than `https://kwentoperations.github.io`, s
 
 ## Hosting
 Not decided (see PR). Nothing deployed.
+
+## What the public form key permits (Code.gs 0.3.5-b3 audit)
+- `form_key` is checked **only in `doPost`**, together with `origin === FORM_ORIGIN`. Both are payload fields, so `origin` is spoofable; it's a soft spam filter (N6).
+- With a matching key + origin, a caller can append **at most one `Submissions` row per valid, unexpired, unused cart_id**. Every POST goes through, in order: the global (60/10 min) and per-cart (3/10 min) rate limits, field allowlist + validation, a SKU check against the Catalog, the fee/COD checks, then `chargeWrites_(1)`, which refuses with `cap_reached` once `SCRIPT_WRITES` hits `min(60 - BASE_COUNT, WRITE_BUDGET)`. The cart is then marked used.
+- The POST response returns only `submission_id`, `preview_total`, `delivery_fee`, `free_delivery`, `preview_text`. No customer data is ever returned.
+- The key grants **no reads**. `doGet ?cart=` needs no key and returns cart lines, catalog prices, stock and public fee/bulk config, but no PII (Carts has no PII).
+- It grants **no admin**. `setupProperties`, `rotateFormKey` and `setupP0` are editor-only functions, not routes. Any other route returns `bad_route`. The key can't change Settings, Catalog, Carts, Orders or Script Properties.
+
+## Copy sources
+SPEC (verbatim):
+- V3L_expired (V3-lite §6), shown for expired, used, or unknown/missing cart links (§4a).
+- "Natanggap na po" + submission id on success (V3-lite §2 step 9).
+- "Libre ang delivery" (§4b).
+- "Wala sa listahan" (§4b).
+- The pickup-only text (Code.gs B3_PICKUP_ONLY_TEXT, spec O2).
+
+INVENTED (no spec template), needs Alwin's OK:
+- Field labels/headings: Mga Item, Cart mo, Detalye mo, Pangalan, Delivery o Pickup?, Bayad, Pumili ng area, I-submit ang order.
+- Pay labels: "Prepaid (GCash/bank)", "COD (cash on delivery)".
+- The preview note "Preview lang ito…", "Total (preview)", "Submission no.", and "Wala pang laman ang cart."
+- All client validation messages (`MSG` in lib/validate.js).
+- Server error messages other than expired/used: rate_limited, busy, bad_key, not_configured/cap_reached, and the generic fallback.
+- "Hindi pa naka-configure ang order form (config.js)."

@@ -72,7 +72,7 @@
       .then(function (res) {
         if (!res.ok) throw { code: res.error };
         $('order').hidden = true; $('done').hidden = false; setStatus('');
-        $('ref').textContent = String(res.submission_id || '').slice(0, 8); $('doneTotal').textContent = peso(res.preview_total) + (res.free_delivery ? ' (' + (res.preview_text || Q.FREE_TEXT) + ')' : '');
+        $('ref').textContent = String(res.submission_id || ''); $('doneTotal').textContent = peso(res.preview_total) + (res.free_delivery ? ' (' + (res.preview_text || Q.FREE_TEXT) + ')' : '');
       })
       .catch(function (e) { setStatus(V.serverMessage(e && e.code), true); if (e && e.code === 'area_not_in_table') { state.mode = 'pickup'; update(); } })
       .then(function () { state.sending = false; $('submit').disabled = false; });   // same idempotency key on retry -> same submission
@@ -81,7 +81,7 @@
   function load() {
     state.cartId = cartIdFromUrl();
     if (!configured()) return setStatus('Hindi pa naka-configure ang order form (config.js).', true);
-    if (!state.cartId) return setStatus('Kulang ang link. Mag-message sa page para sa order link mo.', true);
+    if (!state.cartId) return setStatus(V.V3L_EXPIRED, true);   // no cart id = unusable link -> V3L_expired
     fetch(CFG.apiUrl + '?cart=' + encodeURIComponent(state.cartId))
       .then(function (r) { return r.json(); })
       .then(function (res) {

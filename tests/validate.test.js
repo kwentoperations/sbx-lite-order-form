@@ -46,4 +46,4 @@ test('payload field names', () => {
   assert.deepEqual(Object.keys(p).sort(), ['address', 'area', 'cart_id', 'form_key', 'idempotency_key', 'items', 'mobile', 'mode', 'name', 'origin', 'pay_mode', 'source'].sort());
   assert.match(V.newIdemKey(), /^[A-Za-z0-9_-]{8,64}$/);
 });
-test('server error copy', () => { assert.match(V.serverMessage('expired'), /Expired/); assert.match(V.serverMessage('zzz'), /zzz/); });
+test('server error copy', () => { assert.equal(V.serverMessage('expired'), 'Expired na po ang order link. Mag-message lang po ulit ng items na gusto ninyo at papadalhan namin kayo ng bago.'); assert.equal(V.serverMessage('used'), V.V3L_EXPIRED); assert.match(V.serverMessage('zzz'), /zzz/); });
