@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fil">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Order Form · SBX-LITE (TEST)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><h1>Order Form</h1><p class="tag">SBX-LITE · TEST</p></header>
+  <p id="status" class="status" role="status">Loading…</p>
+
+  <form id="order" hidden novalidate>
+    <section>
+      <h2>Mga Item</h2>
+      <ul id="catalog" class="catalog"></ul>
+    </section>
+
+    <section>
+      <h2>Cart mo</h2>
+      <ul id="cart" class="cart"></ul>
+      <dl class="totals">
+        <dt>Subtotal</dt><dd id="subtotal">₱0.00</dd>
+        <dt>Delivery fee</dt><dd id="fee">₱0.00</dd>
+        <dt class="grand">Total</dt><dd id="total" class="grand">₱0.00</dd>
+      </dl>
+      <p id="free" class="free" hidden></p>
+      <p class="note">Preview lang ito. Kukumpirmahin namin ang final total pagkatapos ma-submit.</p>
+    </section>
+
+    <section>
+      <h2>Detalye mo</h2>
+      <label>Pangalan<input id="name" name="name" autocomplete="name" maxlength="60" required></label>
+      <p class="err" data-for="name"></p>
+      <label>Mobile number<input id="mobile" name="mobile" type="tel" inputmode="tel" autocomplete="tel" placeholder="09171234567" maxlength="20" required></label>
+      <p class="err" data-for="mobile"></p>
+
+      <fieldset>
+        <legend>Delivery o Pickup?</legend>
+        <div id="modes" class="seg"></div>
+        <p class="err" data-for="mode"></p>
+      </fieldset>
+
+      <label id="areaWrap">Area<select id="area" name="area"><option value="">Pumili ng area</option></select></label>
+      <p id="pickupOnly" class="warn" hidden></p>
+      <p class="err" data-for="area"></p>
+
+      <label id="addressWrap">Address<textarea id="address" name="address" rows="3" maxlength="200" autocomplete="street-address"></textarea></label>
+      <p class="err" data-for="address"></p>
+
+      <fieldset>
+        <legend>Bayad</legend>
+        <div id="pays" class="seg"></div>
+        <p class="err" data-for="pay_mode"></p>
+      </fieldset>
+    </section>
+
+    <p class="err" data-for="items"></p>
+    <button id="submit" type="submit">I-submit ang order</button>
+  </form>
+
+  <section id="done" hidden>
+    <h2>Salamat! Natanggap na namin ang order mo.</h2>
+    <p>Order ref: <code id="ref"></code></p>
+    <p>Preview total: <strong id="doneTotal"></strong></p>
+    <p>Magme-message kami sa Messenger para i-confirm.</p>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="lib/quote.js"></script>
+<script src="lib/validate.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

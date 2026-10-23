@@ -1,0 +1,1365 @@
+{
+"source": "bot-staff/b3/tests/test_b3_js_parity.py CASES (Code.gs v3lite-p0-0.3.4-b3)",
+"cases": [
+[
+500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "per_area",
+"delivery_areas": "QC,MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "",
+"cod_allowed": "no"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "per_area",
+"delivery_areas": "QC,MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "",
+"cod_allowed": "no"
+},
+"delivery",
+"MKT",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "per_area",
+"delivery_areas": "QC,MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "",
+"cod_allowed": "no"
+},
+"pickup",
+"QC",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "per_area",
+"delivery_areas": "QC,MKT,PSG",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "",
+"cod_allowed": "no"
+},
+"delivery",
+"PSG",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"PSG",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"",
+"prepaid"
+],
+[
+2166,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+2400,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"prepaid"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+9999,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"PSG",
+"prepaid"
+],
+[
+99999,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+99999,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "  ",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+99999,
+{
+"delivery_fee_mode": "per_area",
+"delivery_areas": "QC,MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "",
+"cod_allowed": "no"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+2166,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "2280",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"cod"
+],
+[
+500,
+{
+"delivery_fee_mode": "per_area",
+"delivery_areas": "QC,MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "",
+"cod_allowed": "no"
+},
+"delivery",
+"QC",
+"cod"
+],
+[
+500,
+{},
+"pickup",
+"",
+"cod"
+],
+[
+500,
+{
+"delivery_fee_mode": "per_area",
+"delivery_areas": "QC,MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "",
+"cod_allowed": "no"
+},
+"pickup",
+"",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"ship",
+"QC",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"",
+"gcash"
+],
+[
+-1,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"",
+"prepaid"
+],
+[
+"1,234.50",
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+" QC ",
+"prepaid"
+],
+[
+123.455,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "weird",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+500,
+{
+"delivery_fee_mode": "none",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"cod"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"cod"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"prepaid"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"cod"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"prepaid"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"cod"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"prepaid"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"cod"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"prepaid"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"cod"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"prepaid"
+],
+[
+0,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"cod"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"cod"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"prepaid"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"cod"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"prepaid"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"cod"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"prepaid"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"cod"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"prepaid"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"cod"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"prepaid"
+],
+[
+76,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"cod"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"cod"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"prepaid"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"cod"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"prepaid"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"cod"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"prepaid"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"cod"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"prepaid"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"cod"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"prepaid"
+],
+[
+1499.99,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"cod"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"cod"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"prepaid"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"cod"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"prepaid"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"cod"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"prepaid"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"cod"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"prepaid"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"cod"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"prepaid"
+],
+[
+1500,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"cod"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"prepaid"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"QC",
+"cod"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"prepaid"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"MKT",
+"cod"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"prepaid"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"delivery",
+"Wala sa listahan",
+"cod"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"prepaid"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"QC",
+"cod"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"prepaid"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"MKT",
+"cod"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"prepaid"
+],
+[
+1750,
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+"pickup",
+"Wala sa listahan",
+"cod"
+]
+],
+"settings": [
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+{
+"delivery_fee_mode": "per_area",
+"delivery_areas": "QC,MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "",
+"cod_allowed": "no"
+},
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+},
+{},
+{
+"delivery_fee_mode": "per_area",
+"delivery_areas": "QC,MKT,PSG",
+"delivery_fee_area:QC": "60",
+"delivery_fee_area:MKT": "120",
+"free_delivery_min": "",
+"cod_allowed": "no"
+},
+{
+"delivery_fee_mode": "flat",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "",
+"cod_allowed": "yes"
+},
+{
+"delivery_fee_mode": "none",
+"delivery_fee_flat": "80",
+"delivery_areas": "QC, MKT",
+"free_delivery_min": "1500",
+"cod_allowed": "yes"
+}
+],
+"bulk": {
+"bulk_rule": "both",
+"order_min_value": "2000",
+"order_discount_pct": "5",
+"order_bulk_price": "",
+"discount_ask_action": "fixed_price_reply"
+}
+}

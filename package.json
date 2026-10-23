@@ -1,0 +1,12 @@
+{
+  "name": "sbx-lite-order-form",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SBX-LITE customer order form page (Bot Staff spec v0.6 §4/§4b)",
+  "scripts": {
+    "test": "node --test tests/",
+    "config": "node scripts/make-config.js",
+    "fixtures": "node scripts/gen-fixtures.js"
+  },
+  "engines": { "node": ">=18" }
+}
