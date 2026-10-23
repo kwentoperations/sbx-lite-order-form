@@ -13,7 +13,7 @@ Static HTML/CSS/JS. Backend: BOT-FBM V3-lite Apps Script web app (Code.gs v0.3.4
 ## Customer link
 `<page>/?c=CART_ID` (or `?cart=CART_ID`). The page calls `GET <apiUrl>?cart=CART_ID` (Google's /exec rejects `?c=`).
 
-## Backend contract (Code.gs v3lite-p0-0.3.4-b3)
+## Backend contract (Code.gs v3lite-p0-0.3.5-b3)
 - GET `?cart=ID` -> `{ok, lines, catalog, preview_total, form_config:{modes, area_options, not_listed, pickup_only_text, pay_modes, delivery_fee_mode, delivery_fee_by_area, free_delivery_min, free_text}}`. OOS (`stock_status=out`) items are hidden.
 - POST, `Content-Type: text/plain` JSON (no CORS preflight), keys exactly: `origin, form_key, cart_id, items[{sku,qty}], name, mobile, mode, address, area, pay_mode, source, idempotency_key`. `address`/`area` are sent only for delivery. Any other key -> `extra_field`.
 - `form_key` + `origin` are a **soft, non-secret spam filter** (Code.gs N6): the key ships in the public page and must match Script Property `FORM_KEY`; `origin` must equal `FORM_ORIGIN` (`https://kwentoperations.github.io`) or POST returns `bad_key`.

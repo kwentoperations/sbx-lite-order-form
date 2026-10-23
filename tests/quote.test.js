@@ -4,7 +4,7 @@ const Q = require('../lib/quote.js');
 const fx = require('./fixtures/cases.json'), exp = require('./fixtures/expected.json'), PREV = require('./fixtures/preview_cases.js');
 const CODE = process.env.CODE_GS || '/workspace/bot-fbm-lite/v3lite/apps_script/Code.gs';
 
-test('fixture snapshot is from Code.gs v0.3.4-b3', () => assert.equal(exp.code_gs_version, 'v3lite-p0-0.3.4-b3'));
+test('fixture snapshot is from Code.gs v0.3.4-b3', () => assert.equal(exp.code_gs_version, 'v3lite-p0-0.3.5-b3'));
 test('quoteTotal_ parity with backend snapshot (' + fx.cases.length + ' cases)', () => {
   fx.cases.forEach((c, i) => assert.deepEqual(Q.quoteTotal_(c[0], c[1], c[2], c[3], c[4]), exp.quote[i], JSON.stringify(c)));
 });
