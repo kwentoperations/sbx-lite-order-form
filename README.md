@@ -49,7 +49,7 @@ SPEC (verbatim):
 - "Wala sa listahan" (§4b).
 - The pickup-only text (Code.gs B3_PICKUP_ONLY_TEXT, spec O2).
 
-INVENTED (no spec template), needs Alwin's OK:
+APPROVED by Alwin 2026-10-23 23:24 PHT (all, as listed):
 - Field labels/headings: Mga Item, Cart mo, Detalye mo, Pangalan, Delivery o Pickup?, Bayad, Pumili ng area, I-submit ang order.
 - Pay labels: "Prepaid (GCash/bank)", "COD (cash on delivery)".
 - The preview note "Preview lang ito…", "Total (preview)", "Submission no.", and "Wala pang laman ang cart."
